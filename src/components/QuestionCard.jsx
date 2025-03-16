@@ -16,9 +16,9 @@ function QuestionCard({ question }) {
         {question.options.map((option, index) => (
           <li
             key={index}
-            className={`p-2 rounded-lg cursor-pointer hover:bg-gray-600 ${
+            className={`p-2 rounded-lg cursor-pointer  ${
               selectedOption === option ? (isCorrect ? "bg-green-500" : "bg-red-500") : "bg-gray-700"
-            }`}
+            } `}
             onClick={() => handleOptionClick(option)}
           >
             {option}
